@@ -14,5 +14,5 @@ class Solution:
 
         return max(maxLength, len(s) - start)
 
-print(Solution().lengthOfLongestSubstring("abcabcbb"))
+
     
