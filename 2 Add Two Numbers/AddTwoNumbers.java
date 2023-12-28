@@ -32,4 +32,8 @@ class Solution {
         }
         return result.next;
     }
+
+    public int[] merge(int[] is, int[] is2) {
+        return null;
+    }
 }
