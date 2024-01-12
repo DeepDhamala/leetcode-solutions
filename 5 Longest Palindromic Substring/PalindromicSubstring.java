@@ -92,28 +92,28 @@ class Solution {
 //     return true;
 // }
 
-public String longestPalindrome(String s) {
-        if(s.length()<=1){
-            return s;
-        }
-        String maxString = new String();
-        for(int i =0; i<s.length()-1; i++){
-            String odd = expandFromCenter(s, i, i);
-            String even = expandFromCenter(s,i,i+1);
-            if(odd.length()>maxString.length()){
-                maxString = odd;
-            }
-            if(even.length()>maxString.length()){
-                maxString=even;
-            }
-        }
-        return null;
-}
-private String expandFromCenter(String s, int left, int right){
-    while (left >=0 && right < s.length() && s.charAt(left) == s.charAt(right)) {
-        left --;
-        right ++;
-    }
-    return s.substring(left+1, right);
-}
+// public String longestPalindrome(String s) {
+//         if(s.length()<=1){
+//             return s;
+//         }
+//         String maxString = new String();
+//         for(int i =0; i<s.length()-1; i++){
+//             String odd = expandFromCenter(s, i, i);
+//             String even = expandFromCenter(s,i,i+1);
+//             if(odd.length()>maxString.length()){
+//                 maxString = odd;
+//             }
+//             if(even.length()>maxString.length()){
+//                 maxString=even;
+//             }
+//         }
+//         return null;
+// }
+// private String expandFromCenter(String s, int left, int right){
+//     while (left >=0 && right < s.length() && s.charAt(left) == s.charAt(right)) {
+//         left --;
+//         right ++;
+//     }
+//     return s.substring(left+1, right);
+// }
 }
