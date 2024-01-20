@@ -1,5 +1,5 @@
 class Solution {
-    p public int reverse(int x) {
+    public int reverse(int x) {
         int sign = (x < 0) ? -1 : 1;
         x = Math.abs(x);
 
