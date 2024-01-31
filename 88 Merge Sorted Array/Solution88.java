@@ -16,6 +16,10 @@ public class Solution88 {
                 i++;
             }
         }
+        list.forEach(System.out::println);
+        list.sort();
+        list.toArray();
+        list.sort(Integer::compareTo);
         Collections.sort(list);
         for (int k=0; k<m+n; k++){
             nums1[k] = list.get(k);
